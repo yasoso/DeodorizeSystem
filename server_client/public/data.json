@@ -1,0 +1,6 @@
+{
+  "//": "「IP」は各ラズパイのIP、「key3」は□□の設定内容を記述してください",
+  "IP": "0.6.14",
+  "Button":"pushA",
+  "text": "Building blocks for Building Bots"
+}

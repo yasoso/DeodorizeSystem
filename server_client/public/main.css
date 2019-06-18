@@ -1,0 +1,123 @@
+.drag-and-drop {
+    cursor: move;
+    position: absolute;
+    z-index: 1000;
+}
+
+.drag-and-drop#WhaleA{
+    cursor: move;
+    position: absolute;
+    top:200px;left:200px;
+    z-index: 1000;
+    right:0;
+    bottom:0;
+}
+
+.title{
+    color: #364e96;/*文字色*/
+    /* position: absolute; */
+    position: centor;
+    top:0;
+    padding: 0.5em 0;/*上下の余白*/
+    border-top: solid 3px #364e96;/*上線*/
+    border-bottom: solid 3px #364e96;/*下線*/
+}
+
+.drag-and-drop text#smellTxt {
+    color: white;/*文字色*/
+    position: absolute;
+    font-size :12;
+    /* border: solid 10px #364e96;線色 */
+    border-radius: 0.5em;/*角丸*/
+    padding: 0.5em 0;/*上下の余白*/
+    background: #364e96;/*色*/
+}
+
+.drag-and-drop text#pushTxt {
+    position: absolute;
+    color: red;
+    position: absolute;
+    bottom:  3;
+    right:0;
+}
+
+.drag {
+    z-index: 1001;
+}
+
+.center{
+		text-align: center;
+}
+
+button.modeButton{
+    position: absolute;
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #668ad8;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+}
+
+.pushButton{
+    position: absolute;
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #FFF;
+    background: #03A9F4;/*色*/
+    border: solid 1px #0f9ada;/*線色*/
+    border-radius: 4px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
+    text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+
+}
+.pushButton:active {/*ボタンを押したとき*/
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+    border-bottom: none;
+}
+.square_btn {
+    position: relative;
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #FFF;
+    background: #fd9535;/*背景色*/
+    border-bottom: solid 2px #d27d00;/*少し濃い目の色に*/
+    border-radius: 4px;/*角の丸み*/
+    box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+    font-weight: bold;
+}
+
+.square_btn:active {
+    border-bottom: solid 2px #fd9535;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+}
+
+
+body {
+    /* 画像ファイルの指定 */
+    background-image: url(img/kc104.png);
+    
+    /* 画像ファイルのサイズ指定 */
+    /* background-size : contain,contain; */
+    
+    /* 画像の配置 */
+    background-position: left;
+     
+    /* 画像をタイル状に繰り返し表示しない */
+    background-repeat: no-repeat;
+     
+    /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+    background-attachment: fixed;
+     
+    /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+    /* background-size: cover; */
+     
+    /* 背景画像が読み込まれる前に表示される背景のカラー */
+    /* background-color: #464646; */
+  }
